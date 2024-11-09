@@ -1,4 +1,14 @@
-import { Controller } from '@nestjs/common'
+import { Controller, Get } from '@nestjs/common'
 
 @Controller('comercial-assist')
-export class ComercialAssistController {}
+export class ComercialAssistController {
+  @Get('plans')
+  findAll(): string {
+    return 'Assistance comercial'
+  }
+
+  @Get()
+  findOne(): string {
+    return 'Assistance comercial'
+  }
+}
